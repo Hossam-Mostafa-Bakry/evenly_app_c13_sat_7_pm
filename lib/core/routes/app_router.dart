@@ -1,5 +1,6 @@
 import 'package:evently_app_c13_sat_7pm/core/routes/page_routes_name.dart';
 import 'package:evently_app_c13_sat_7pm/modules/forgetPassword/forget_password_view.dart';
+import 'package:evently_app_c13_sat_7pm/modules/layout/layout_view.dart';
 import 'package:evently_app_c13_sat_7pm/modules/signIn/sign_in_view.dart';
 import 'package:evently_app_c13_sat_7pm/modules/signUp/sign_up_view.dart';
 import 'package:evently_app_c13_sat_7pm/modules/splash/splash_view.dart';
@@ -36,6 +37,14 @@ class AppRouter {
         {
           return MaterialPageRoute(
             builder: (context) => const ForgetPasswordView(),
+            settings: settings,
+          );
+        }
+
+      case PageRoutesName.layout:
+        {
+          return MaterialPageRoute(
+            builder: (context) => const LayoutView(),
             settings: settings,
           );
         }
